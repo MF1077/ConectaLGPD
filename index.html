@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaLGPD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div id="ContainerTotal">
+        <div id="container1">
+            <app-navbar>
+                <header class="navbar">
+                    <nav arial-label="Menu de navegação" class="px-6 flex items-center justify-between h-20 w-full">
+                        <div id="logo-img" class="logo">
+                            <a class="logo-link" routerlinkactive="text-base font-semibold text-sky-700 transition-all duration-200 hover:text-primary px-2 py-1 rounded-md hover:bg-sky-50" href="index.html" rel="null" target="_self">
+                                <img src="security-antivirus-svgrepo-com.svg" height="48" width="48" alt="Logo ConectaLGPD" class="h-12 w-auto">
+                                <h1 class="text-logo text-lg font-semibold text-sky-700 transition-all duration-200 hover:text-primary px-2 py-1 rounded-md hover:bg-sky-50" id="text-logo">ConectaLGPD</h1>
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <a routerlinkactive="text-base font-semibold text-sky-700 transition-all duration-200 hover:text-primary px-2 py-1 rounded-md hover:bg-sky-50" href="index.html#introducao" rel="null" target="_self">Início</a>
+                            <a routerlinkactive="text-base font-semibold text-sky-700 transition-all duration-200 hover:text-primary px-2 py-1 rounded-md hover:bg-sky-50" href="simulador.html" rel="null" target="_self">Simulador Prático</a>
+                            <a routerlinkactive="text-base font-semibold text-sky-700 transition-all duration-200 hover:text-primary px-2 py-1 rounded-md hover:bg-sky-50" href="/quiz" rel="null" target="_self">Quiz LGPD</a>
+                            <a routerlinkactive="text-base font-semibold text-sky-700 transition-all duration-200 hover:text-primary px-2 py-1 rounded-md hover:bg-sky-50" href="/meu-painel" rel="null" target="_self">Meu Painel</a>
+                        </div>
+                    </nav>
+                </header>
+            </app-navbar>
+        </div>
+        <main id="container2">
+            <app-lgpd>
+                <section class="lgpd-section" id="introducao">
+                    <h1 class="lgpd-title">Entenda a LGPD de forma simples e prática</h1>
+                    <p class="lgpd-description">A Lei Geral de Proteção de Dados (Lei nº 13.709/2018) protege os direitos fundamentais de liberdade e de privacidade, exigindo que o tratamento de dados siga princípios como finalidade, transparência e segurança.</p>
+                    <p class="base-legal">
+                        <small><strong>Fundamentação legal:</strong> Art. 1º (Objetivo da Lei) e Art. 6º (Princípios do Tratamento).</small>
+                    </p>
+                    <div>
+                        <a href="#tipos-dados">Explorar Guia de Dados</a>
+                        <a href="quiz.html">Fazer o Quiz (15 perguntas)</a>
+                    </div>
+                </section>
+
+                <section class="lgpd-section" id="tipos-dados">
+                    <h2 class="lgpd-subtitle">Os 3 Tipos de Dados na LGPD</h2>
+                    <p>A lei define categorias diferentes para cada tipo de informação e estabelece níveis específicos de proteção:</p>
+                    
+                    <ul class="lgpd-list">
+                        <li><strong>Dado Pessoal:</strong> Qualquer informação relacionada a uma pessoa natural identificada ou identificável.</li>
+                        <li><strong>Dado Pessoal Sensível:</strong> Dados sobre origem racial ou étnica, convicção religiosa, opinião política, saúde, vida sexual, entre outros.</li>
+                        <li><strong>Dado Anonimizado:</strong> Informação que não pode ser associada a uma pessoa específica.</li>
+                    </ul>
+                    <div class="cards-container">
+                        <!-- Card 1 -->
+                        <article class="card">
+                            <h3>1. Dados Pessoais</h3>
+                            <p>Informação relacionada a pessoa natural identificada ou identificável.</p>
+                            <ul>
+                            <li><strong>Exemplos:</strong> Nome completo, CPF, RG, e-mail, telefone, endereço e IP.</li>
+                            <li><strong>Regra:</strong> Exige uma hipótese legal prevista na lei para ser coletado e usado.</li>
+                            </ul>
+                            <footer class="card-legal">
+                            <small>Base legal: Art. 5º, inciso I</small>
+                            </footer>
+                        </article>
+                        <!-- Card 2 -->
+                        <article class="card">
+                                <h3>2. Dados Pessoais Sensíveis</h3>
+                                <p>Dados sobre origem racial/étnica, convicção religiosa, opinião política, saúde, vida sexual, genética ou biometria.</p>
+                                <ul>
+                                <li><strong>Exemplos:</strong> Exames médicos, digital, reconhecimento facial e filiação sindical.</li>
+                                <li><strong>Regra:</strong> Possui proteção reforçada devido ao alto risco de discriminação.</li>
+                                </ul>
+                                <footer class="card-legal">
+                                <small>Base legal: Art. 5º, inciso II</small>
+                                </footer>
+                        </article>
+                        <!-- Card 3 -->
+                        <article class="card">
+                            <h3>3. Dados Anonimizados</h3>
+                            <p>Dado relativo a titular que não possa ser identificado, considerando a utilização de meios técnicos razoáveis.</p>
+                            <ul>
+                            <li><strong>Exemplos:</strong> Estatísticas demográficas e relatórios gerais sem vínculo com indivíduos.</li>
+                            <li><strong>Regra:</strong> Não se sujeita à LGPD, salvo se o processo de anonimização for revertido.</li>
+                            </ul>
+                            <footer class="card-legal">
+                            <small>Base legal: Art. 5º, inciso III e Art. 12</small>
+                            </footer>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="direitos-titulares">
+                    <h2>Seus Direitos como Titular</h2>
+                    <p>Toda pessoa natural tem assegurada a titularidade de seus dados pessoais (Art. 17). Clique nos itens abaixo para conhecer os direitos garantidos pelos <strong>Arts. 18 a 22 da LGPD</strong>:
+                    </p>
+
+                    <div class="accordion-direitos">
+                        <details>
+                            <summary><strong>Confirmação e Acesso aos Dados</strong> <small>(Art. 18, I e II)</small></summary>
+                            <p>Você tem o direito de confirmar se uma empresa trata seus dados e solicitar uma cópia completa e gratuita dessas informações.</p>
+                        </details>
+
+                        <details>
+                            <summary><strong>Correção de Dados</strong> <small>(Art. 18, III)</small></summary>
+                            <p>Você pode exigir a atualização ou correção de dados que estejam incompletos, inexatos ou desatualizados.</p></details>
+
+                        <details>
+                            <summary><strong>Anonimização, Bloqueio ou Eliminação</strong> <small>(Art. 18, IV e VI)</small>
+                            </summary>
+                            <p>Direito de pedir que dados desnecessários, excessivos ou tratados fora da lei sejam bloqueados, anonimizados ou apagados.</p>
+                            </details>
+                        <details>
+                            <summary><strong>Portabilidade dos Dados</strong> <small>(Art. 18, V)</small></summary>
+                            <p>Você pode solicitar a transferência dos seus dados pessoais para outro fornecedor de serviço ou produto, mediante requisição expressa.</p>
+                        </details>
+
+                        <details>
+                            <summary><strong>Informação sobre Compartilhamento e Revogação</strong> <small>(Art. 18, VII, VIII e IX)</small></summary>
+                            <p>Direito de saber com quem seus dados foram compartilhados, quais as consequências de não dar consentimento e o direito de revogá-lo a qualquer momento.</p>
+                        </details>
+
+                        <details>
+                            <summary><strong>Petição e Revisão de Decisões Automatizadas</strong> <small>(Arts. 18 §1º, 19, 20 e 22)</small></summary>
+                            <p>Você pode reclamar à ANPD ou órgãos de defesa do consumidor, além de pedir revisão de decisões tomadas unicamente por algoritmos (como análise de crédito).</p>
+                        </details>
+                    </div>
+                </section>
+                        <a href="simulador.html" class="lgpd-button">Acesse o Simulador Prático</a>
+            </app-lgpd>
+        </main>
+        <footer id="footer-site">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Guia Interativo LGPD</h3>
+                    <p>
+                        Plataforma educativa voltada à conscientização sobre proteção de dados pessoais, direitos dos titulares e boas práticas digitais.
+                    </p>
+                    <p class="legal-summary">
+                    <small>
+                    <strong>Fundamentação Legal:</strong> Lei nº 13.709/2018 (Arts. 1º, 5º, 6º e 17 a 22).
+                    </small>
+                    </p>
+                </div>
+                <p>&copy; 2026 ConectaLGPD. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
