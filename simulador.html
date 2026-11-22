@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Prático | ConectaLGPD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="ContainerTotal">
+        <div id="container1">
+            <header class="navbar">
+                <nav aria-label="Menu de navegação">
+                    <div id="logo-img" class="logo">
+                        <a class="logo-link" href="index.html">
+                            <img src="logo.svg" height="48" width="48" alt="Logo ConectaLGPD">
+                            <h1 class="text-logo" id="text-logo">ConectaLGPD</h1>
+                        </a>
+                    </div>
+                    <div class="nav-links">
+                        <a href="index.html#introducao">Início</a>
+                        <a class="active" href="simulador.html" aria-current="page">Simulador Prático</a>
+                        <a href="quiz.html">Quiz LGPD</a>
+                        <a href="index.html#direitos-titulares">Meus Direitos</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <main id="container2" class="simulator-page">
+            <section class="simulator-header">
+                <span class="simulator-badge">Experiência prática</span>
+                <h1>Simulador de proteção de dados</h1>
+                <p>Analise situações comuns e escolha a conduta mais adequada à LGPD.</p>
+            </section>
+
+            <form id="simulator-form" class="simulator-card">
+                <fieldset>
+                    <legend>1. Cadastro em um aplicativo</legend>
+                    <p>Um aplicativo solicita CPF, endereço completo, contatos e localização contínua para criar uma conta gratuita.</p>
+                    <label><input type="radio" name="cadastro" value="a" required> Aceitar todas as permissões para concluir o cadastro</label>
+                    <label><input type="radio" name="cadastro" value="b"> Fornecer os dados, mas não ler a política de privacidade</label>
+                    <label><input type="radio" name="cadastro" value="c"> Permitir somente os dados necessários e revogar os excessivos</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Solicitação de acesso à câmera</legend>
+                    <p>Uma loja virtual pede acesso à câmera antes de explicar por que essa informação será usada.</p>
+                    <label><input type="radio" name="camera" value="a" required> Negar sempre o acesso a qualquer câmera</label>
+                    <label><input type="radio" name="camera" value="b"> Autorizar somente após transparência sobre finalidade e uso</label>
+                    <label><input type="radio" name="camera" value="c"> Compartilhar imagens apenas por mensagens privadas</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Suspeita de vazamento de dados</legend>
+                    <p>Uma organização identifica acesso indevido a dados de clientes e ainda não sabe a extensão do incidente.</p>
+                    <label><input type="radio" name="vazamento" value="a" required> Contenção imediata, investigação e avaliação da comunicação necessária</label>
+                    <label><input type="radio" name="vazamento" value="b"> Ocultar o incidente até que ele desapareça</label>
+                    <label><input type="radio" name="vazamento" value="c"> Excluir os registros para impedir rastreamento</label>
+                </fieldset>
+
+                <button class="simulator-submit" type="submit">Verificar minhas decisões</button>
+            </form>
+
+            <section id="simulator-result" class="simulator-result" hidden>
+                <div>
+                    <span class="simulator-badge">Resultado</span>
+                    <h2 id="simulator-score"></h2>
+                </div>
+                <ul id="result-list"></ul>
+                <button id="reset-simulator" class="simulator-reset" type="button">Recomeçar simulador</button>
+            </section>
+        </main>
+
+        <footer id="footer-site">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Guia Interativo LGPD</h3>
+                    <p>Plataforma educativa sobre proteção de dados pessoais e direitos dos titulares.</p>
+                </div>
+                <p>&copy; 2026 ConectaLGPD</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
