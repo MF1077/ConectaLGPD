@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teste seus conhecimentos sobre a Lei Geral de Proteção de Dados com o quiz interativo ConectaLGPD.">
+    <title>Quiz LGPD | ConectaLGPD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="ContainerTotal">
+        <header class="navbar">
+            <nav aria-label="Menu de navegação">
+                <div class="logo">
+                    <a class="logo-link" href="index.html">
+                        <img src="logo.svg" width="48" height="48" alt="">
+                        <span class="text-logo">ConectaLGPD</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html#introducao">Início</a>
+                    <a href="simulador.html">Simulador Prático</a>
+                    <a class="active" href="quiz.html" aria-current="page">Quiz LGPD</a>
+                    <a href="direitos.html">Meus Direitos</a>
+                    <a href="painel.html">Meu Painel</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="quiz-page">
+            <section class="quiz-header">
+                <span class="quiz-badge">15 perguntas · escolha uma alternativa</span>
+                <h1>Quiz sobre a LGPD</h1>
+                <p>Teste seus conhecimentos sobre dados pessoais, direitos e boas práticas. Seu resultado fica salvo neste dispositivo.</p>
+            </section>
+
+            <form id="quiz-form" class="quiz-card">
+                <fieldset>
+                    <legend>1. O que significa a sigla LGPD?</legend>
+                    <label><input type="radio" name="q1" value="a" required> Lei Geral de Proteção de Dados</label>
+                    <label><input type="radio" name="q1" value="b"> Lei Geral de Privacidade Digital</label>
+                    <label><input type="radio" name="q1" value="c"> Lei de Garantia e Processamento Digital</label>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Qual é o objetivo central da LGPD?</legend>
+                    <label><input type="radio" name="q2" value="a" required> Impedir qualquer coleta de dados por empresas</label>
+                    <label><input type="radio" name="q2" value="b"> Proteger direitos de liberdade e privacidade, regulando o tratamento de dados pessoais</label>
+                    <label><input type="radio" name="q2" value="c"> Regular somente compras feitas pela internet</label>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Qual opção é um dado pessoal?</legend>
+                    <label><input type="radio" name="q3" value="a" required> CPF associado a uma pessoa</label>
+                    <label><input type="radio" name="q3" value="b"> A temperatura média de uma cidade</label>
+                    <label><input type="radio" name="q3" value="c"> Um número aleatório sem relação com alguém</label>
+                </fieldset>
+                <fieldset>
+                    <legend>4. Qual destes é um dado pessoal sensível?</legend>
+                    <label><input type="radio" name="q4" value="a" required> CEP de um estabelecimento comercial</label>
+                    <label><input type="radio" name="q4" value="b"> Modelo de um equipamento</label>
+                    <label><input type="radio" name="q4" value="c"> Informação sobre saúde de uma pessoa</label>
+                </fieldset>
+                <fieldset>
+                    <legend>5. O que caracteriza um dado anonimizado?</legend>
+                    <label><input type="radio" name="q5" value="a" required> Foi apenas criptografado, podendo ser facilmente associado ao titular</label>
+                    <label><input type="radio" name="q5" value="b"> Não permite identificar o titular por meios técnicos razoáveis disponíveis</label>
+                    <label><input type="radio" name="q5" value="c"> Está publicado na internet</label>
+                </fieldset>
+                <fieldset>
+                    <legend>6. O princípio da necessidade orienta que a organização deve:</legend>
+                    <label><input type="radio" name="q6" value="a" required> Coletar o máximo de dados para usos futuros</label>
+                    <label><input type="radio" name="q6" value="b"> Guardar os dados para sempre</label>
+                    <label><input type="radio" name="q6" value="c"> Tratar apenas os dados pertinentes e não excessivos para a finalidade</label>
+                </fieldset>
+                <fieldset>
+                    <legend>7. O consentimento é:</legend>
+                    <label><input type="radio" name="q7" value="a" required> A única hipótese legal que permite tratar dados pessoais</label>
+                    <label><input type="radio" name="q7" value="b"> Uma das hipóteses legais; outras podem ser aplicáveis conforme o caso</label>
+                    <label><input type="radio" name="q7" value="c"> Uma autorização permanente e impossível de revogar</label>
+                </fieldset>
+                <fieldset>
+                    <legend>8. Uma pessoa percebe que seu endereço está incorreto no cadastro. Qual direito pode exercer?</legend>
+                    <label><input type="radio" name="q8" value="a" required> Exigir acesso aos dados de todos os clientes</label>
+                    <label><input type="radio" name="q8" value="b"> Solicitar a correção de dados incompletos, inexatos ou desatualizados</label>
+                    <label><input type="radio" name="q8" value="c"> Exigir que a empresa publique seus dados</label>
+                </fieldset>
+                <fieldset>
+                    <legend>9. Em geral, quem decide as finalidades e os meios do tratamento?</legend>
+                    <label><input type="radio" name="q9" value="a" required> O controlador</label>
+                    <label><input type="radio" name="q9" value="b"> O titular dos dados, em todos os casos</label>
+                    <label><input type="radio" name="q9" value="c"> O operador, necessariamente</label>
+                </fieldset>
+                <fieldset>
+                    <legend>10. Qual é o papel típico do operador?</legend>
+                    <label><input type="radio" name="q10" value="a" required> Definir sozinho todas as finalidades do tratamento</label>
+                    <label><input type="radio" name="q10" value="b"> Tratar dados em nome do controlador, conforme suas instruções e a lei</label>
+                    <label><input type="radio" name="q10" value="c"> Fiscalizar e aplicar sanções administrativas</label>
+                </fieldset>
+                <fieldset>
+                    <legend>11. Qual alternativa descreve uma função do encarregado pelo tratamento de dados?</legend>
+                    <label><input type="radio" name="q11" value="a" required> Substituir a ANPD na fiscalização das empresas</label>
+                    <label><input type="radio" name="q11" value="b"> Garantir que nunca aconteça incidente de segurança</label>
+                    <label><input type="radio" name="q11" value="c"> Atuar como canal de comunicação entre controlador, titulares e ANPD</label>
+                </fieldset>
+                <fieldset>
+                    <legend>12. No tratamento de dados de crianças e adolescentes, deve prevalecer:</legend>
+                    <label><input type="radio" name="q12" value="a" required> O melhor interesse da criança e do adolescente</label>
+                    <label><input type="radio" name="q12" value="b"> O interesse comercial da organização</label>
+                    <label><input type="radio" name="q12" value="c"> A dispensa de medidas de transparência</label>
+                </fieldset>
+                <fieldset>
+                    <legend>13. Diante de um incidente que possa causar risco ou dano relevante, a organização deve:</legend>
+                    <label><input type="radio" name="q13" value="a" required> Apagar evidências e não registrar o ocorrido</label>
+                    <label><input type="radio" name="q13" value="b"> Conter e avaliar o incidente e seguir as regras aplicáveis de comunicação à ANPD e aos titulares</label>
+                    <label><input type="radio" name="q13" value="c"> Comunicar somente se alguém publicar o caso nas redes sociais</label>
+                </fieldset>
+                <fieldset>
+                    <legend>14. Qual prática está mais alinhada à segurança e à prevenção?</legend>
+                    <label><input type="radio" name="q14" value="a" required> Compartilhar senhas entre toda a equipe</label>
+                    <label><input type="radio" name="q14" value="b"> Limitar acessos e adotar medidas proporcionais de proteção</label>
+                    <label><input type="radio" name="q14" value="c"> Manter dados pessoais em planilhas públicas</label>
+                </fieldset>
+                <fieldset>
+                    <legend>15. Como um titular pode exercer seus direitos?</legend>
+                    <label><input type="radio" name="q15" value="a" required> Apenas por meio de processo judicial</label>
+                    <label><input type="radio" name="q15" value="b"> Somente presencialmente na sede da empresa</label>
+                    <label><input type="radio" name="q15" value="c"> Entrando em contato com o controlador pelos canais disponibilizados</label>
+                </fieldset>
+                <button class="quiz-submit" type="submit">Conferir resultado</button>
+            </form>
+
+            <section id="quiz-result" class="quiz-result" aria-live="polite" hidden>
+                <span class="quiz-badge">Seu resultado</span>
+                <h2 id="quiz-score"></h2>
+                <p id="quiz-message"></p>
+                <ol id="quiz-feedback"></ol>
+                <button id="quiz-retry" class="quiz-retry" type="button">Tentar novamente</button>
+                <a class="quiz-panel-link" href="painel.html">Ver meu painel</a>
+            </section>
+        </main>
+
+        <footer id="footer-site">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>ConectaLGPD</h3>
+                    <p>Aprenda sobre privacidade e proteção de dados pessoais.</p>
+                </div>
+                <p>&copy; 2026 ConectaLGPD</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
