@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acompanhe seus resultados nos desafios LGPD Educa.">
+    <title>Meu Painel | LGPD Educa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="ContainerTotal">
+        <header class="navbar">
+            <nav aria-label="Menu de navegação">
+                <div class="logo">
+                    <a class="logo-link" href="index.html">
+                        <img src="logo.svg" width="48" height="48" alt="">
+                        <span class="text-logo">LGPD Educa</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html#introducao">Início</a>
+                    <a href="simulador.html">Simulador Prático</a>
+                    <a href="quiz.html">Quiz LGPD</a>
+                    <a href="direitos.html">Meus Direitos</a>
+                    <a class="active" href="painel.html" aria-current="page">Meu Painel</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="user-panel" class="dashboard-page">
+            <section class="dashboard-header">
+                <span class="quiz-badge">Seu espaço de aprendizagem</span>
+                <h1>Meu Painel</h1>
+                <p>Acompanhe seus resultados e continue aprendendo sobre proteção de dados.</p>
+            </section>
+
+            <section class="dashboard-grid" aria-label="Resumo do seu progresso">
+                <article class="dashboard-card">
+                    <span class="dashboard-label">Último quiz</span>
+                    <strong id="panel-quiz-latest">Carregando...</strong>
+                    <small id="panel-quiz-date"></small>
+                </article>
+                <article class="dashboard-card">
+                    <span class="dashboard-label">Melhor resultado no quiz</span>
+                    <strong id="panel-quiz-best">Carregando...</strong>
+                    <small>Melhor pontuação salva neste dispositivo</small>
+                </article>
+                <article class="dashboard-card">
+                    <span class="dashboard-label">Último simulador</span>
+                    <strong id="panel-simulator">Carregando...</strong>
+                    <small id="panel-simulator-date"></small>
+                </article>
+            </section>
+
+            <p id="panel-activity" class="dashboard-note" aria-live="polite"></p>
+
+            <section class="dashboard-actions">
+                <h2>Continue sua jornada</h2>
+                <div class="dashboard-links">
+                    <a href="quiz.html">Fazer o quiz LGPD</a>
+                    <a href="simulador.html">Praticar no simulador</a>
+                    <a href="direitos.html">Conhecer meus direitos</a>
+                </div>
+                <p>Os resultados são armazenados apenas no armazenamento local deste navegador; não é necessário criar uma conta.</p>
+            </section>
+        </main>
+
+        <footer id="footer-site">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>LGPD Educa</h3>
+                    <p>Aprenda sobre privacidade e proteção de dados pessoais.</p>
+                </div>
+                <p>&copy; 2026 LGPD Educa</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
