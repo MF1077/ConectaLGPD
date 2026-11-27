@@ -1,4 +1,4 @@
-# ConectaLGPD
+# LGPD Educa
 
 Plataforma educativa sobre a Lei Geral de Proteção de Dados (LGPD), com guia de direitos, quiz interativo e simulador de situações práticas.
 
